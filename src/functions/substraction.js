@@ -1,4 +1,4 @@
-exports.addition = async function (x, y) {
+exports.substract = function (x, y) {
     try {
         const sub = x - y;
         return sub

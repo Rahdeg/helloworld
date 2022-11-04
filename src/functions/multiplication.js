@@ -1,4 +1,4 @@
-exports.addition = async function (x, y) {
+exports.multiply =  function (x, y) {
     try {
         const mul = x * y;
         return mul

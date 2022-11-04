@@ -1,12 +1,12 @@
-const {addition} = require("../functions/addition");
-const substract = require("../functions/substraction");
-const multiply = require("../functions/multiplication");
+const {add} = require("../functions/addition");
+const {substract} = require("../functions/substraction");
+const {multiply} = require("../functions/multiplication");
 
 exports.solve = async function (req, res) {
   try {
     const data  = req.body;
     if (data.operation_type === "addition") {
-      const result = await addition(data.x,data.y);
+      const result = await add(data.x,data.y);
       return res
         .status(400)
         .json({

@@ -1,4 +1,4 @@
-exports.addition =  function (x, y) {
+exports.add =  function (x, y) {
     try {
         const sum = x + y;
         return sum
