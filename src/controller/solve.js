@@ -8,7 +8,6 @@ exports.solve = async function (req, res) {
     if (data.operation_type === "addition") {
       const result = await add(data.x,data.y);
       return res
-        .status(400)
         .json({
           slackUsername: "Rahdeg",
           result: result,
@@ -17,7 +16,6 @@ exports.solve = async function (req, res) {
     } else if (data.operation_type === "subtraction") {
         const result = substract(data.x,data.y);
       return res
-        .status(400)
         .json({
           slackUsername: "Rahdeg",
           result: result,
@@ -26,7 +24,6 @@ exports.solve = async function (req, res) {
     } else {
         const result = multiply(data.x,data.y);
       return res
-        .status(400)
         .json({
           slackUsername: "Rahdeg",
           result: result,
